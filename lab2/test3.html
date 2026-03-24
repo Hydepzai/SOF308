@@ -10,101 +10,143 @@
 </head>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-              <table class="table  table-bordered">
-   
-     <tr>
-       <th></th>
-       <th>tiết</th>
-       <th>thứ 2</th>
-        <th>thứ 3</th>
-         <th>thứ 4</th>
-          <th>thứ 5</th>
-           <th>thứ 6</th>
-           
-      </tr>
+  <div class="container mt-3">
+    <h3>Bài tập ứng dụng Modal cho Tài khoản</h3>
 
-  
-      <tr>
-       <th  rowspan="5">Sáng </th>
-       <td>1</td>
-       <td>3</td>
-       <td>4</td>
-       <td>5</td>
-       <td>6</td>
-       <td>7</td>
-      </tr>
-      <tr>
-      <td>2</td>
-       <td>3</td>
-       <td>4</td>
-       <td>5</td>
-       <td>6</td>
-       <td>7</td>
-      </tr>
-      <tr>
-            <td colspan="6">rachoi</td>
-      </tr>
-   
-      <tr>
-<td>3</td>
-<td>Tiếng Việt</td>
-<td>Tiếng Anh</td>
-<td>Toán</td>
-<td class="theduc">Thể dục</td>
-<td>Tiếng Việt</td>
-</tr>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Tài khoản
+    </button>
+</div>
 
-<tr>
-<td>4</td>
-<td>Tiếng Việt</td>
-<td>Tiếng Anh</td>
-<td>HĐTN</td>
-<td>Stem</td>
-<td>TNXH</td>
-</tr>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
-<tr>
-<td colspan="7">Ăn trưa - Nghỉ trưa</td>
-</tr>
+            <div class="modal-header">
+                <h4 class="modal-title">ĐĂNG NHẬP/ ĐĂNG KÝ</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
 
-<!-- CHIỀU -->
-<tr>
-<th rowspan="4">CHIỀU</th>
-<td>3</td>
-<td>Toán</td>
-<td>Toán</td>
-<td>Tiếng Anh</td>
-<td>Tiếng Việt</td>
-<td>Tiếng Anh</td>
-</tr>
+            <div class="modal-body">
+              <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
 
-<tr>
-<td colspan="6">Ăn xế - Ra chơi</td>
-</tr>
+<li class="nav-item">
+<a class="nav-link active" data-bs-toggle="tab" href="#register">Đăng ký</a>
+</li>
 
-<tr>
-<td>4</td>
-<td>TNXH</td>
-<td>Tiếng Việt</td>
-<td>Mỹ thuật</td>
-<td>Tiếng Việt</td>
-<td>Ôn Toán</td>
-</tr>
+<li class="nav-item">
+<a class="nav-link" data-bs-toggle="tab" href="#login">Đăng nhập</a>
+</li>
 
-<tr>
-<td>5</td>
-<td>Ôn TV</td>
-<td>Tiếng Việt</td>
-<td>Kỹ năng sống</td>
-<td>Tiếng Việt</td>
-<td>HĐTN (SHL)</td>
-</tr>
+<li class="nav-item">
+</li>
 
-   
- </table>
+</ul>
+
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+<!-- REGISTER -->
+<div id="register" class="container tab-pane active"><br>
+<div class="col-md-6">
+<div class="card p-3">
+
+<h5>Form Đăng Ký Thông Tin</h5>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Họ và Tên</label>
+<input type="text" class="form-control" placeholder="Nhập họ và tên">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" placeholder="Nhập email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Số Điện Thoại</label>
+<input type="text" class="form-control" placeholder="Nhập số điện thoại">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Mật Khẩu</label>
+<input type="password" class="form-control" placeholder="Nhập mật khẩu">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Xác Nhận Mật Khẩu</label>
+<input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Giới Tính:</label><br>
+<input type="radio" name="gt"> Nam
+<input type="radio" name="gt" class="ms-2"> Nữ
+</div>
+
+<div class="mb-3">
+<label class="form-label">Ngôn Ngữ</label>
+<select class="form-select">
+<option>Tiếng Việt</option>
+<option>English</option>
+</select>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">
+Tôi đồng ý với các điều khoản và điều kiện
+</label>
+</div>
+
+<button class="btn btn-primary">Đăng ký</button>
+
+</form>
+
+</div>
+</div>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="container tab-pane fade"><br>
+
+<div class="col-md-6">
+<div class="card p-3">
+
+<h5>Form Đăng nhập</h5>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" placeholder="Nhập email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Mật Khẩu</label>
+<input type="password" class="form-control" placeholder="Nhập mật khẩu">
+</div>
+
+<button class="btn btn-primary">Đăng Nhập</button>
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+            </div>
+
         </div>
     </div>
+</div>
 </body>
 </html>
